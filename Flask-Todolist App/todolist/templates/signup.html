@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Đăng kí{% endblock %}
+
+{% block content %}
+    <form method="POST">
+        <h3 align="center">Đăng kí</h3>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Nhập Email..."/>
+        </div>
+
+        <div class="form-group">
+            <label for="user_name">Tên người dùng</label>
+            <input type="text" class="form-control" id="email" name="user_name" placeholder="Nhập tên..."/>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Mật khẩu</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Nhập mật khẩu..."/>
+        </div>
+
+        <div class="form-group">
+            <label for="confirm_password">Xác thực mật khẩu</label>
+            <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Nhập lại mật khẩu..."/>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Đăng kí</button>
+
+    </form>
+{% endblock %}
